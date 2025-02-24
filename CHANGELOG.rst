@@ -30,6 +30,16 @@ See the fragment files in the `changelog.d directory`_.
 
 .. scriv-insert-here
 
+.. _changelog-9.21.1:
+
+[v9.21.1] - 2025-02-24
+______________________
+
+Changed
+~~~~~~~
+
+* Updated release workflow to use scriv to create the release notes. (by @bryanttv)
+
 .. _changelog-9.21.0:
 
 [v9.21.0] - 2025-02-24
