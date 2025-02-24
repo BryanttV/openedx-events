@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - name: Install requirements
+        run: make requirements
+      - name: Create or update GitHub release
+        if: ${{ github.ref_type == 'tag' }}
+        run: scriv github-release --repo=bryanttv/openedx-events
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
