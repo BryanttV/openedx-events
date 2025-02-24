@@ -30,6 +30,46 @@ See the fragment files in the `changelog.d directory`_.
 
 .. scriv-insert-here
 
+.. _changelog-9.20.0:
+
+[v9.20.0] - 2025-02-24
+______________________
+
+Removed
+~~~~~~~
+
+* Removed support for Python 3.8.
+* Removed unused ``COURSE_DOWNLOADED_STARTED`` event. (by @billgates)
+
+Added
+~~~~~
+
+* Added new ``COURSE_DOWNLOADED_COMPLETED`` event.
+* Added support for annotated Python dictionaries as Avro Map type. (by @billgates)
+
+Changed
+~~~~~~~
+
+* Added support for Python 3.12.
+* **BREAKING CHANGE:** Updated from Django 3.x to 4.x. (by @billgates)
+
+Deprecated
+~~~~~~~~~~
+
+* Deprecated ``COURSE_DOWNLOADED_STARTED`` event
+* Deprecated use of non-annotated dictionaries in events. (by @billgates)
+
+Fixed
+~~~~~
+
+* Fixed event validation in background processes.
+* Fixed incorrect handling of event payloads. (by @billgates)
+
+Security
+~~~~~~~~
+
+* Updated dependencies to patch security vulnerabilities.
+
 .. _changelog-9.19.0:
 
 [v9.19.0] - 2025-02-24
