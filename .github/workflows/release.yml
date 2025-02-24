@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - '*'
+      - "*"
   workflow_dispatch:
 
 jobs:
@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
+      - name: Install pandoc
+        run: sudo apt-get install -y pandoc
       - name: Install requirements
         run: make requirements
       - name: Create or update GitHub release
