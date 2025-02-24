@@ -30,6 +30,22 @@ See the fragment files in the `changelog.d directory`_.
 
 .. scriv-insert-here
 
+.. _changelog-9.21.0:
+
+[v9.21.0] - 2025-02-24
+______________________
+
+Deprecated
+~~~~~~~~~~
+
+* Deprecated ``COURSE_DOWNLOADED_STARTED`` event
+* Deprecated use of non-annotated dictionaries in events. (by @billgates)
+
+Security
+~~~~~~~~
+
+* Updated dependencies to patch security vulnerabilities. (by @bryanttv)
+
 .. _changelog-9.20.0:
 
 [v9.20.0] - 2025-02-24
