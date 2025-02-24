@@ -30,7 +30,7 @@ See the fragment files in the `changelog.d directory`_.
 
 .. scriv-insert-here
 
-.. _changelog-9.19.0:
+.. _changelog-9.18.2:
 
 [9.18.2] - 2025-02-18
 ---------------------
